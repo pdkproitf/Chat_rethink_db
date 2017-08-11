@@ -36,6 +36,9 @@ gem 'redis', '~> 3.0'
 # gem 'capistrano-rails', group: :development
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha3'
+
+gem 'pry-byebug'
+gem 'pry'
 # rethinkdb
 gem 'nobrainer'
 group :development, :test do
