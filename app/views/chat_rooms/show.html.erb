@@ -1,6 +1,6 @@
 
 <div class="container">
-  <%= link_to 'back to rooms <<', chat_rooms_path %>
+  <label><%= "you are in >> #{@chat_room.title} <<" %></label>
   <div id="messages" data-chat-room-id="<%= @chat_room.id %>">
     <%= render @chat_room.messages.to_a %>
   </div>
@@ -14,9 +14,9 @@
       <%= f.submit "Post", class: 'btn btn-primary btn-lg', id: 'submit-btn' %>
     </div>
   <% end %>
+
+  <%= link_to 'back to rooms <<', chat_rooms_path %>
 </div>
-
-
 
 <script type="text/javascript">
   $('.message-input').keyup(function(event){
