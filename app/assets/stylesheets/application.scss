@@ -14,3 +14,10 @@
  *= require_self
  */
 @import "bootstrap";
+.card{
+  border-top: aliceblue !important;
+  border-left: aliceblue !important;
+  border-right: aliceblue !important;
+  height: 2em;
+  margin-top: 0.7em;
+}
