@@ -1,11 +1,12 @@
+
 <div class="container">
+  <%= link_to 'back to rooms <<', chat_rooms_path %>
   <div id="messages" data-chat-room-id="<%= @chat_room.id %>">
     <%= render @chat_room.messages.to_a %>
   </div>
 
   <%= form_for(@message, remote: true) do |f| %>
     <div class="form-group">
-      <%= f.label :body %>
       <%= f.text_area :body, class: 'form-control message-input' %>
       <small class="text-muted">From 2 to 1000 characters</small>
       <input name="chat_room_id" type="hidden" value="<%= @chat_room.id %>">
@@ -13,8 +14,8 @@
       <%= f.submit "Post", class: 'btn btn-primary btn-lg', id: 'submit-btn' %>
     </div>
   <% end %>
-
 </div>
+
 
 
 <script type="text/javascript">
