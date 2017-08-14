@@ -1,3 +1,13 @@
 // Place all the styles related to the ChatRooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container{
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  #messages {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

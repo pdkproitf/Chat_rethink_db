@@ -1,0 +1,39 @@
+2017-08-11T18:32:35.487559283 0.270831s notice: Recursively removing directory /home/ces/Desktop/ror/chat_rethink_db/rethinkdb_data/tmp
+2017-08-11T18:32:35.493219808 0.276489s notice: Initializing directory /home/ces/Desktop/ror/chat_rethink_db/rethinkdb_data
+2017-08-11T18:32:35.493299779 0.276569s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/ces/Desktop/ror/chat_rethink_db/rethinkdb_data' did not already exist or is empty.)
+2017-08-11T18:32:35.494170518 0.277440s notice: Running rethinkdb 2.3.6 (GCC 5.4.0)...
+2017-08-11T18:32:35.496804681 0.280076s notice: Running on Linux 4.4.0-89-generic x86_64
+2017-08-11T18:32:35.496861371 0.280131s notice: Loading data from directory /home/ces/Desktop/ror/chat_rethink_db/rethinkdb_data
+2017-08-11T18:32:35.525301896 0.308571s info: Automatically using cache size of 5328 MB
+2017-08-11T18:32:35.526704375 0.309974s notice: Listening for intracluster connections on port 29015
+2017-08-11T18:32:35.531588861 0.314858s notice: Listening for client driver connections on port 28015
+2017-08-11T18:32:35.531719799 0.314989s notice: Listening for administrative HTTP connections on port 8080
+2017-08-11T18:32:35.531722185 0.314991s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-11T18:32:35.531725238 0.314994s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-11T18:32:35.531727160 0.314996s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-11T18:32:35.531729860 0.314999s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-08-11T18:32:35.531732537 0.315002s notice: Server ready, "ces_box_d4l" e17019b8-48b4-4f8d-8f98-1e5a4cbcb7a4
+2017-08-11T18:32:38.029005780 2.812275s info: Table d79e6b07-5f6c-4587-9a6d-9a725816dac8: Starting a new Raft election for term 1.
+2017-08-11T18:32:38.029455437 2.812725s info: Table d79e6b07-5f6c-4587-9a6d-9a725816dac8: Added replica on this server.
+2017-08-11T18:32:38.032706314 2.815976s info: Table d79e6b07-5f6c-4587-9a6d-9a725816dac8: This server is Raft leader for term 1. Latest log index is 0.
+2017-08-11T18:32:38.296076830 3.079347s info: Table d79e6b07-5f6c-4587-9a6d-9a725816dac8: Configuration is changing.
+2017-08-11T18:32:58.161576246 22.944845s info: Table b974d422-f403-4c83-accd-93886e526c73: Starting a new Raft election for term 1.
+2017-08-11T18:32:58.161717695 22.944987s info: Table b974d422-f403-4c83-accd-93886e526c73: Added replica on this server.
+2017-08-11T18:32:58.164295347 22.947565s info: Table b974d422-f403-4c83-accd-93886e526c73: This server is Raft leader for term 1. Latest log index is 0.
+2017-08-11T18:32:58.425857045 23.209127s info: Table b974d422-f403-4c83-accd-93886e526c73: Configuration is changing.
+2017-08-14T08:35:53.108245301 0.255392s notice: Running rethinkdb 2.3.6 (GCC 5.4.0)...
+2017-08-14T08:35:53.114792844 0.261945s notice: Running on Linux 4.4.0-89-generic x86_64
+2017-08-14T08:35:53.114934016 0.262080s notice: Loading data from directory /home/ces/Desktop/ror/chat_rethink_db/rethinkdb_data
+2017-08-14T08:35:53.139537738 0.286684s info: Automatically using cache size of 4683 MB
+2017-08-14T08:35:53.140627299 0.287774s notice: Listening for intracluster connections on port 29015
+2017-08-14T08:35:53.163525628 0.310672s notice: Listening for client driver connections on port 28015
+2017-08-14T08:35:53.163627377 0.310774s notice: Listening for administrative HTTP connections on port 8080
+2017-08-14T08:35:53.163629577 0.310776s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-14T08:35:53.163631291 0.310777s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-14T08:35:53.163633345 0.310779s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-14T08:35:53.163665740 0.310812s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-08-14T08:35:53.163667763 0.310814s notice: Server ready, "ces_box_d4l" e17019b8-48b4-4f8d-8f98-1e5a4cbcb7a4
+2017-08-14T08:35:54.470059063 1.617207s info: Table b974d422-f403-4c83-accd-93886e526c73: Starting a new Raft election for term 2.
+2017-08-14T08:35:54.474886679 1.622034s info: Table b974d422-f403-4c83-accd-93886e526c73: This server is Raft leader for term 2. Latest log index is 3.
+2017-08-14T08:35:54.687198885 1.834346s info: Table d79e6b07-5f6c-4587-9a6d-9a725816dac8: Starting a new Raft election for term 2.
+2017-08-14T08:35:54.693981269 1.841129s info: Table d79e6b07-5f6c-4587-9a6d-9a725816dac8: This server is Raft leader for term 2. Latest log index is 3.

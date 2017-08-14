@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-block">
+    <div class="row">
+      <div class="col-md-2">
+        <%= message.user.email %>
+      </div>
+      <div class="col-md-10">
+        <p class="card-text">
+          <span class="text-muted"><%= message.created_at %> says</span><br>
+          <%= message.body %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

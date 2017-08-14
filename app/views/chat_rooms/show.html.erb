@@ -1,24 +1,28 @@
-<div id="messages" data-chat-room-id="<%= @chat_room.id %>">
-  <%= render @chat_room.messages %>
-</div>
-
-<%= form_for @message, url: '#' do |f| %>
-  <div class="form-group">
-    <%= f.label :body %>
-    <%= f.text_area :body, class: 'form-control' %>
-    <small class="text-muted">From 2 to 1000 characters</small>
+<div class="container">
+  <div id="messages" data-chat-room-id="<%= @chat_room.id %>">
+    <%= render @chat_room.messages.to_a %>
   </div>
 
-  <%= f.submit "Post", class: 'btn btn-primary btn-lg' %>
-<% end %>
+  <%= form_for(@message, remote: true) do |f| %>
+    <div class="form-group">
+      <%= f.label :body %>
+      <%= f.text_area :body, class: 'form-control message-input' %>
+      <small class="text-muted">From 2 to 1000 characters</small>
+      <input name="chat_room_id" type="hidden" value="<%= @chat_room.id %>">
+      <br>
+      <%= f.submit "Post", class: 'btn btn-primary btn-lg', id: 'submit-btn' %>
+    </div>
+  <% end %>
+
+</div>
+
 
 <script type="text/javascript">
-$('#new_message').submit (e) ->
-  $this = $(this)
-  textarea = $this.find('#message_body')
-  if $.trim(textarea.val()).length > 1
-    App.global_chat.send_message textarea.val(), messages.data('chat-room-id')
-    textarea.val('')
-  e.preventDefault()
-  return false
+  $('.message-input').keyup(function(event){
+    if(event.keyCode == 13){
+      $('#submit-btn').click()
+      event.target.value = ''
+      event.preventDefault()
+    }
+  })
 </script>

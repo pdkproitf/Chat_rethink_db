@@ -2,10 +2,9 @@ jQuery(document).on 'turbolinks:load', ->
   messages = $('#messages')
   if $('#messages').length > 0
     messages_to_bottom = -> messages.scrollTop(messages.prop("scrollHeight"))
-
     messages_to_bottom()
 
-    App.global_chat = App.cable.subscriptions.create {
+    App.room = App.cable.subscriptions.create {
         channel: "ChatRoomsChannel"
         chat_room_id: messages.data('chat-room-id')
       },
@@ -17,6 +16,11 @@ jQuery(document).on 'turbolinks:load', ->
 
       received: (data) ->
         messages.append data['message']
+        $('textarea').val ''
+
+        height = $('.container').scrollHeight;
+        messages.scrollTop(height);
+
         messages_to_bottom()
 
       send_message: (message, chat_room_id) ->
