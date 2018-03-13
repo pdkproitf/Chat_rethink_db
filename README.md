@@ -1,5 +1,5 @@
 # READ ME
-##Built a chat web, use rethinkdB
+## Built a chat web, use rethinkdB
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
