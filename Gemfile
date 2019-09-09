@@ -34,7 +34,7 @@ gem 'redis', '~> 3.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'devise'
+gem 'devise', '>= 4.7.1'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
 gem 'pry-byebug'
